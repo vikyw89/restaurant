@@ -1,3 +1,4 @@
+import './style.css';
 import { Header } from './modules/Header.js'
 import { Footer } from './modules/Footer.js'
 import { Main } from './modules/Main.js'

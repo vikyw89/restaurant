@@ -1,3 +1,4 @@
+
 const Footer = () => {
     const child = document.createElement('div')
     child.classList.add('Footer')

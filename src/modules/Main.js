@@ -1,5 +1,4 @@
 import { HomeContent } from "./HomeContent.js"
-import { MenuContent } from "./MenuContent.js"
 
 const Main = (e) => {
     const child = document.createElement('div')
