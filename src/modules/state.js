@@ -36,6 +36,15 @@ const setMenu = (arg) => {
     return JSON.parse(localStorage.menu)
 }
 
+const contacts = () => {
+    return JSON.parse(localStorage.contacts)
+}
+
+const setContacts = (arg) => {
+    localStorage.contacts = JSON.stringify(arg)
+    return JSON.parse(localStorage.contacts)
+}
+
 // init
 setCount(0)
 setHours([
@@ -115,6 +124,27 @@ setMenu(
     }
 )
 
+setContacts([
+    {
+        name: 'Irene',
+        position: 'CEO',
+        phone: '999-123-4141',
+        email: 'irene@email.com'
+    },
+    {
+        name: 'Irena',
+        position: 'CEO too',
+        phone: '999-123-4141',
+        email: 'irena@email.com'
+    },
+    {
+        name: 'Irenelle',
+        position: 'yes, CEO too',
+        phone: '999-123-4141',
+        email: 'irenelle@email.com'
+    }
+])
+
 export {
     count,
     setCount,
@@ -123,5 +153,7 @@ export {
     reviews,
     setReviews,
     menu,
-    setMenu
+    setMenu,
+    contacts,
+    setContacts
 }

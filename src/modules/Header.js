@@ -1,5 +1,6 @@
 import { HomeContent } from "./HomeContent.js"
 import { MenuContent } from "./MenuContent.js"
+import { ContactContent } from "./Contact.js"
 
 const child = document.createElement('div')
 const Header = (e) => {
@@ -41,6 +42,12 @@ const Contact = (e) => {
     const child = document.createElement('div')
     child.classList.add('Contact')
     child.textContent = 'Contact Us'
+    // bind events
+    child.addEventListener('pointerdown', (e)=>{
+        const node = document.querySelector('.Main')
+        node.innerHTML = ''
+        node.appendChild(ContactContent(e))
+    })
     return child
 }
 

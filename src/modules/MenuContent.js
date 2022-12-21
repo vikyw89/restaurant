@@ -5,8 +5,8 @@ const MenuContent = (e) => {
     child.classList.add('MenuContent')
     child.appendChild(MenuTitle(e))
     child.appendChild(BeveragesContainer(e))
-    child.appendChild(SidesContainer(e))
-    child.appendChild(MainDishesContainer(e))
+    // child.appendChild(SidesContainer(e))
+    // child.appendChild(MainDishesContainer(e))
     return child
 }
 
